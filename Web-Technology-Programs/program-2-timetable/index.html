@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Time Table</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 30px; background: #fff; }
+h1 { text-align: center; font-size: 26px; color: #333; margin-bottom: 20px; }
+table { width: 960px; max-width: 100%; margin: 0 auto; border-collapse: collapse; border: 2px solid #333; text-align: center; font-size: 13.5px; }
+th, td { border: 1px solid #555; padding: 10px 4px; font-weight: normal; }
+th { background: #d5e8d4; font-weight: bold; }
+.day, .lnc { background: #fce5cd; font-weight: bold; }
+.brk { background: #f3f3f3; font-weight: bold; }
+.end { background: #e0e0e0; font-weight: bold; }
+.g { background: #d5e8d4; }
+.b { background: #dae8fc; }
+.p { background: #ebd8ee; }
+.pk { background: #f8cecc; }
+.y { background: #fff2cc; }
+.c { background: #c2f0f8; }
+.o { background: #f9cb9c; }
+</style>
+</head>
+<body>
+<h1>Time Table</h1>
+<table>
+<tr><th>Day</th><th>9:00 -<br>10:00</th><th>10:00 -<br>11:00</th><th>11:00 -<br>11:15</th><th>11:15 -<br>12:15</th><th>12:15 -<br>1:15</th><th>1:15 - 2:00</th><th>2:00 -<br>3:00</th><th>3:00 -<br>4:00</th><th>4:00 - 5:00</th></tr>
+<tr><td class="day">Monday</td><td class="g">SEPM</td><td class="p">JAVA</td><td rowspan="6" class="brk">Break</td><td class="y">OOPS</td><td class="p">DDCO</td><td rowspan="6" class="lnc">LUNCH<br>BREAK</td><td class="b">DS</td><td class="pk">TC</td><td class="b">DBMS</td></tr>
+<tr><td class="day">Tuesday</td><td colspan="2" class="pk">Web LAB</td><td class="y">OOPS</td><td class="c">Forum</td><td class="g">SE</td><td class="b">CG</td><td class="p">Python</td></tr>
+<tr><td class="day">Wednesday</td><td class="y">OOPS</td><td class="p">OS</td><td class="b">Elective</td><td class="pk">TC</td><td class="b">Elective</td><td class="g">CN</td><td class="o">AI</td></tr>
+<tr><td class="day">Thursday</td><td colspan="2" class="pk">Web LAB</td><td class="b">CG</td><td class="g">SE</td><td class="g">CN</td><td class="g">CN</td><td class="b">DBMS</td></tr>
+<tr><td class="day">Friday</td><td class="b">CDS</td><td class="p">OS</td><td class="g">SE</td><td class="pk">DVP</td><td colspan="2" class="c">Forum</td><td class="p">Machine<br>Learning</td></tr>
+<tr><td class="day">Saturday</td><td class="b">CDS</td><td class="p">OS</td><td colspan="2" class="pk">Web LAB</td><td></td><td></td><td></td></tr>
+<tr><td colspan="10" class="end">End of Timetable</td></tr>
+</table>
+</body>
+</html>

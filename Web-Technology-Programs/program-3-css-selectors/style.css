@@ -1,0 +1,83 @@
+/* Element selector */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    margin: 30px;
+}
+
+/* ID selector */
+#main-content {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+/* Adjacent sibling selector */
+h2 + p {
+    color: #444;
+    font-size: 17px;
+}
+
+/* Pseudo-class selector */
+h3:hover {
+    color: #e11d48;
+    cursor: pointer;
+}
+
+/* Attribute selector */
+p[lang="en"] {
+    background: #fff3cd;
+    padding: 10px;
+}
+
+/* Class selector */
+.highlight {
+    background: yellow;
+    font-weight: bold;
+}
+
+/* Descendant selector */
+section p {
+    color: #2563eb;
+}
+
+/* Child selector */
+section > span {
+    display: inline-block;
+    background: #dbeafe;
+    padding: 8px;
+}
+
+/* Pseudo-element selector */
+p::first-letter {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Class + descendant selector */
+.special p {
+    color: #7c3aed;
+    font-weight: bold;
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Link states */
+a {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #dc2626;
+}
