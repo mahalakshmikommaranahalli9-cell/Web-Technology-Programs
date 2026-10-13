@@ -1,167 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Registration Form</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Technology Programs</title>
 
 <style>
-body{
-    font-family:Arial;
-    background:#f0f0f0;
-    padding:20px;
+* {
+    box-sizing: border-box;
 }
 
-h1{
-    text-align:center;
-    color:#333;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    color: #1f2937;
 }
 
-table{
-    width:100%;
-    max-width:600px;
-    margin:auto;
-    background:white;
-    padding:20px;
-    border-radius:8px;
-    box-shadow:0 0 10px #bbb;
+header {
+    text-align: center;
+    padding: 55px 20px 35px;
 }
 
-td{
-    padding:10px;
+h1 {
+    margin: 0 0 10px;
+    font-size: 42px;
 }
 
-label{
-    font-weight:bold;
-    color:#555;
+header p {
+    margin: 0;
+    color: #64748b;
+    font-size: 17px;
 }
 
-input[type=text],
-input[type=email],
-input[type=password],
-input[type=date],
-select,
-textarea{
-    width:100%;
-    padding:8px;
-    box-sizing:border-box;
-    border:1px solid #ddd;
-    border-radius:4px;
-    font-size:16px;
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
 }
 
-input[type=radio],
-input[type=checkbox]{
-    margin-right:5px;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 22px;
 }
 
-input[type=submit]{
-    background:#4CAF50;
-    color:white;
-    padding:10px 20px;
-    border:0;
-    border-radius:4px;
-    font-size:18px;
-    cursor:pointer;
+.card {
+    background: white;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    border: 1px solid #e5e7eb;
 }
 
-input[type=submit]:hover{
-    background:#45a049;
+.number {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+.card p {
+    color: #64748b;
+    line-height: 1.6;
+    min-height: 75px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    background: #4f46e5;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+a:hover {
+    background: #3730a3;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #64748b;
 }
 </style>
 </head>
 
 <body>
 
-<h1>Registration Form</h1>
+<header>
+    <h1>Web Technology Programs</h1>
+    <p>HTML, CSS and Web Technology Practical Programs</p>
+</header>
 
-<form onsubmit="register(); return false;">
-<table>
+<main class="container">
 
-<tr>
-<td><label>Full Name:</label></td>
-<td><input type="text" required></td>
-</tr>
+<div class="cards">
 
-<tr>
-<td><label>Email:</label></td>
-<td><input type="email" required></td>
-</tr>
+    <!-- PROGRAM 01 -->
+    <div class="card">
+        <div class="number">PROGRAM 01</div>
+        <h2>HTML Basic Tags</h2>
+        <p>
+            Headings, paragraphs, formatting tags, blockquote,
+            pre, subscript and superscript.
+        </p>
+        <a href="program-1-basic-html/">Open Program</a>
+    </div>
 
-<tr>
-<td><label>Password:</label></td>
-<td><input type="password" id="password" required></td>
-</tr>
+    <!-- PROGRAM 02 -->
+    <div class="card">
+        <div class="number">PROGRAM 02</div>
+        <h2>Time Table</h2>
+        <p>
+            A complete HTML table demonstrating rowspan,
+            colspan, styling and timetable layout.
+        </p>
+        <a href="program-2-timetable/">Open Program</a>
+    </div>
 
-<tr>
-<td><label>Confirm Password:</label></td>
-<td><input type="password" id="confirmPassword" required></td>
-</tr>
+    <!-- PROGRAM 03 -->
+    <div class="card">
+        <div class="number">PROGRAM 03</div>
+        <h2>CSS Selectors</h2>
+        <p>
+            Demonstration of sibling, attribute, class,
+            descendant, child and pseudo-element selectors.
+        </p>
+        <a href="program-3-css-selectors/">Open Program</a>
+    </div>
 
-<tr>
-<td><label>Gender:</label></td>
-<td>
-<input type="radio" name="gender" required>Male
-<input type="radio" name="gender">Female
-<input type="radio" name="gender">Other
-</td>
-</tr>
+    <!-- PROGRAM 04 -->
+    <div class="card">
+        <div class="number">PROGRAM 04</div>
+        <h2>Registration Form</h2>
+        <p>
+            A complete HTML registration form with personal
+            details, gender, country, interests, bio and
+            password validation.
+        </p>
+        <a href="program-4-registration-form/">Open Program</a>
+    </div>
 
-<tr>
-<td><label>Date of Birth:</label></td>
-<td><input type="date" required></td>
-</tr>
+</div>
 
-<tr>
-<td><label>Country:</label></td>
-<td>
-<select required>
-<option value="">Select a country</option>
-<option>India</option>
-<option>United Kingdom</option>
-<option>Canada</option>
-<option>Australia</option>
-<option>Other</option>
-</select>
-</td>
-</tr>
+</main>
 
-<tr>
-<td><label>Interests:</label></td>
-<td>
-<input type="checkbox">Sports
-<input type="checkbox">Music
-<input type="checkbox">Reading
-<input type="checkbox">Travel
-</td>
-</tr>
-
-<tr>
-<td><label>Bio:</label></td>
-<td><textarea rows="4"></textarea></td>
-</tr>
-
-<tr>
-<td colspan="2" style="text-align:center">
-<input type="submit" value="Register">
-</td>
-</tr>
-
-</table>
-</form>
-
-<script>
-function register(){
-
-    let password = document.getElementById("password").value;
-    let confirmPassword = document.getElementById("confirmPassword").value;
-
-    if(password !== confirmPassword){
-        alert("Passwords do not match!");
-        return;
-    }
-
-    alert("Registration Successful!");
-}
-</script>
+<footer>
+    <p>Web Technology Practical Programs</p>
+    <p>Created by Mahalakshmi</p>
+</footer>
 
 </body>
 </html>
